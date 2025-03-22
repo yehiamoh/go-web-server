@@ -33,7 +33,7 @@ func POST(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusCreated)
 
 		// Set the Content-Type header to indicate the response format
-		w.Header().Set("Content-Type", "text/plain")
+		w.Header().Set("Content-Type", "Content-Type/json")
 
 		// Write a success message to the response body
 		w.Write([]byte("Exhibition saved successfully"))
